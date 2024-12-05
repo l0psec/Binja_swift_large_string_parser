@@ -1,0 +1,1 @@
+# Binja_swift_large_string_parser
