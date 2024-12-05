@@ -15,3 +15,4 @@ for f in bv.hlil_functions():
             m = "0x{0}".format(m)
             print(hex(i.address), bv.get_string_at(int(m, 16)+32).raw)
             bv.set_comment_at(i.address, bv.get_string_at(int(m, 16)+32).raw)
+            bv.add_tag(i.address, "Important", bv.get_string_at(int(m, 16)+32).raw)
